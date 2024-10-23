@@ -12,7 +12,7 @@
 - code : 전처리 / 분석 등의 코드
 - data : 원본 데이터 및 전처리 후의 데이터
 - model : 학습 후의 머신러닝 모델
-'''
+```
 Oliveyoung-review-sentiment-analysis
  ┣ code
  ┃ ┣ advertisement_LDA.ipynb
@@ -34,7 +34,7 @@ Oliveyoung-review-sentiment-analysis
  ┃ ┣ pca_2500.pk1
  ┃ ┗ tf_idf_vec.pk1
  ┗ README.md
- '''
+```
 
 ## 과정
 
