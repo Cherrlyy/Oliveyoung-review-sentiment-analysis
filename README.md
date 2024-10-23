@@ -14,27 +14,29 @@
 - data : 원본 데이터 및 전처리 후의 데이터
 - model : 학습 후의 머신러닝 모델
 ```
-Oliveyoung-review-sentiment-analysis
- ┣ code
- ┃ ┣ advertisement_LDA.ipynb
- ┃ ┣ Oliveyoung_data_preprocessing.ipynb
- ┃ ┣ product_polarity_predict.ipynb
- ┃ ┣ review_type_polarity_count.ipynb
- ┃ ┗ Tfidf_Logisticregression_modeling.ipynb
- ┣ data
- ┃ ┣ ai_hub_data.csv
- ┃ ┣ oliveyoung_advertisement.csv
- ┃ ┣ oliveyoung_advertisement_preprocessed.csv
- ┃ ┣ product_polarity.csv
- ┃ ┣ review.csv
- ┃ ┣ review_final_preprocessed.csv
- ┃ ┗ review_type_polarity.csv
- ┣ model
- ┃ ┣ model.pk1
- ┃ ┣ model_pca_2500.pk1
- ┃ ┣ pca_2500.pk1
- ┃ ┗ tf_idf_vec.pk1
- ┗ README.md
+📦Oliveyoung-review-sentiment-analysis
+ ┣ 📂code
+ ┃ ┣ 📜advertisement_LDA.ipynb
+ ┃ ┣ 📜Oliveyoung_data_preprocessing.ipynb
+ ┃ ┣ 📜product_category_counting.ipynb
+ ┃ ┣ 📜product_polarity_predict.ipynb
+ ┃ ┣ 📜review_type_polarity_count.ipynb
+ ┃ ┗ 📜Tfidf_Logisticregression_modeling.ipynb
+ ┣ 📂data
+ ┃ ┣ 📜ai_hub_data.csv
+ ┃ ┣ 📜oliveyoung_advertisement.csv
+ ┃ ┣ 📜oliveyoung_advertisement_preprocessed.csv
+ ┃ ┣ 📜product_category_count.csv
+ ┃ ┣ 📜product_polarity.csv
+ ┃ ┣ 📜review.csv
+ ┃ ┣ 📜review_final_preprocessed.csv
+ ┃ ┗ 📜review_type_polarity.csv
+ ┣ 📂model
+ ┃ ┣ 📜model.pk1
+ ┃ ┣ 📜model_pca_2500.pk1
+ ┃ ┣ 📜pca_2500.pk1
+ ┃ ┗ 📜tf_idf_vec.pk1
+ ┗ 📜README.md
 ```
 
 ## 과정
@@ -50,4 +52,8 @@ Oliveyoung-review-sentiment-analysis
 
 ### 분석 결과
 ![스킨케어 제품 평균 긍정도](https://github.com/user-attachments/assets/ead1632e-1c3f-42d3-9e92-06fca5a8bbcb)
-
+스킨케어 제품의 토픽별 평균 긍정도이다. 제품 대부분이 수분감과 진정 케어에 초점이 맞춰져 있는데, 그에 비해 Skin 토픽 긍정도가 떨어진다는 건 스킨케어 제품들이 피부 개선 관련 효능은 떨어진다는 것을 뜻한다. 이후 피부 개선 제품의 수요를 추가로 분석해 제품 리뉴얼 방향을 잡는 것도 좋겠다.
+![image](https://github.com/user-attachments/assets/49c47358-20c2-4f8a-b2f4-eb6550d15277)
+D사의 토너 제품, A사의 토너 제품, C사의 크림 제품이 전체(보습, 진정, 피부 개선) 긍정도에서 상위를 차지했다. 특히 D사와 C사 같은 경우, 같은 제조사로 소비자의 경우 위 그래프의 긍정도 상위 22개 제품에 다수 속한 것을 확인한다면 해당 제조사에 대한 선호도 상승을 기대할 수도 있다. 
+![image](https://github.com/user-attachments/assets/e799329c-fbe8-43b2-9034-1070d1705574)
+제품을 제형별로 살펴보면 화장수(스킨, 미스트, 토너, 토닉, 스프레이) 제품이 다른 제형에 비해 월등히 많고, 세럼(에센스, 세럼, 앰플, 로션)과 크림, 오일이 그 뒤를 따름을 알 수 있다. 밤(밤, 스틱) 제품의 경우 분석한 148개 제품 중 존재하지 않기 때문에 타 제형에 비해 해당 제품 자체의 출시가 드물다는 것으로 이해할 수 있다.
